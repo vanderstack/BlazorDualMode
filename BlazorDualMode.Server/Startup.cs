@@ -1,3 +1,4 @@
+using BlazorDualMode.Shared;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Hosting;
@@ -18,21 +19,7 @@ namespace BlazorDualMode.Server
         {
             services.AddMvc().AddNewtonsoftJson();
             services.AddServerSideBlazor();
-
-            // Server Side Blazor doesn't register HttpClient by default
-            if (!services.Any(x => x.ServiceType == typeof(HttpClient)))
-            {
-                // Setup HttpClient for server side in a client side compatible fashion
-                services.AddScoped<HttpClient>(s =>
-                {
-                    // Creating the URI helper needs to wait until the JS Runtime is initialized, so defer it.      
-                    var uriHelper = s.GetRequiredService<NavigationManager>();
-                    return new HttpClient
-                    {
-                        BaseAddress = new Uri(uriHelper.BaseUri)
-                    };
-                });
-            }
+            services.AddScoped<IWeatherForecastService, WeatherForecastService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
