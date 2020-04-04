@@ -16,7 +16,6 @@
 
 namespace BlazorApp.Wpf
 {
-
     using System;
     using System.Windows;
     using BlazorDualMode.Client;

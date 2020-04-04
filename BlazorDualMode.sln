@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorDualMode.Shared", "Bl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp.Wpf", "BlazorApp.Wpf\BlazorApp.Wpf.csproj", "{C6E21B9A-AB3B-4224-8E7B-062C549E193F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.Components.Testing", "Microsoft.AspNetCore.Components.Testing\Microsoft.AspNetCore.Components.Testing.csproj", "{619EE83E-C405-41DD-8F1F-57445FF39BA4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleApp.Tests", "SampleApp.Tests\SampleApp.Tests.csproj", "{CEFE4CA7-FD22-48DC-A230-95D675B0BF05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{C6E21B9A-AB3B-4224-8E7B-062C549E193F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6E21B9A-AB3B-4224-8E7B-062C549E193F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6E21B9A-AB3B-4224-8E7B-062C549E193F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{619EE83E-C405-41DD-8F1F-57445FF39BA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{619EE83E-C405-41DD-8F1F-57445FF39BA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{619EE83E-C405-41DD-8F1F-57445FF39BA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{619EE83E-C405-41DD-8F1F-57445FF39BA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEFE4CA7-FD22-48DC-A230-95D675B0BF05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEFE4CA7-FD22-48DC-A230-95D675B0BF05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEFE4CA7-FD22-48DC-A230-95D675B0BF05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEFE4CA7-FD22-48DC-A230-95D675B0BF05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
